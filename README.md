@@ -3,6 +3,6 @@ jarrodandbillsonshodown
 
 Random Stuff with us lovable oaths
 
-with me, milkytits 
+with me, Milkytits 
 
-and me, #######
+and me, Billson
