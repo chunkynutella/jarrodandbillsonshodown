@@ -19,9 +19,14 @@
 		body{
 			background-color:#557F48 ;
 		}
+        h1{
+            color:#9eff87;
+            text-align:center;
+            font size:2em;
+        }
 	</style>
     <title>Jarrod Net</title>
-	<body onLoad="insultJarrod();">
+	<body onLoad="insultEveryone();">
         
         <article>
             <p id="elmnt"></p>
@@ -29,14 +34,23 @@
 		function getRandomInt(min, max) {
                 	return Math.floor(Math.random() * (max - min + 1)) + min;
             	}
-            	function insultJarrod(){
+            	function insultEveryone(){
 			var listofinsults = ['Shitlord', 'Shitcunt', 'Sancho', 'Dickcheese', 'Pomperknickle', 'Butthat'];
 			var insultname = listofinsults[getRandomInt(0, listofinsults.length-1)];
 			document.getElementById("elmnt").innerHTML = "Everyone's a " + insultname;
             	}
-            	var whey  = setInterval(function (){insultJarrod()}, getRandomInt(200,2000));
+            	var whey  = setInterval(function (){insultEveryone()}, getRandomInt(200,2000));
             	
          </script>
+        </article>
+        
+        <article>
+            <h1>your a fema nazi</h1>
+        
+        
+        
+        
+        
         </article>
 	</body>
 </html>
