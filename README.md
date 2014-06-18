@@ -3,6 +3,6 @@ jarrodandbillsonshodown
 
 Random Stuff with us lovable oaths
 
-with me, Milkytits 
+with me, J-rod
 
 and me, Billson
