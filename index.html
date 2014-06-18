@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html>
 	<style>
-		heading     {color:red;}
-        article     {background-color:#2bcae5;border-width: 3pxborder-color:black;}
-        heading1    {color:#0e7c4d;}
-		p           {color:blue;}
+		body {
+			font-family: Arial;
+			}
+		heading{
+			color:red;
+			}
+        	heading1{
+        		color:#0e7c4d;
+        		}
+		p{
+			color:#6EFF44;
+			font-size: 4em;
+			margin: auto;
+			text-align: center;
+			}
+		body{
+			background-color:#557F48 ;
+		}
 	</style>
-	
-    <title>Testing shit</title>
-	<body>
-		<p>Jarrod's a tard</p>
-		<p>Nah he's alright</p>
-		<heading><b>"I made this heading"~J-Rod</b></heading>
+    <title>Jarrod Net</title>
+	<body onLoad="insultJarrod();">
         
         <article>
-            <heading1>this is going well</heading1>
-            
-            
+            <p id="elmnt"></p>
+            <script>
+		function getRandomInt(min, max) {
+                	return Math.floor(Math.random() * (max - min + 1)) + min;
+            	}
+            	function insultJarrod(){
+			var listofinsults = ['Shitlord', 'Shitcunt', 'Sancho', 'Dickcheese', 'Pomperknickle', 'Butthat'];
+			var insultname = listofinsults[getRandomInt(0, listofinsults.length-1)];
+			document.getElementById("elmnt").innerHTML = "Jarrod's a " + insultname;
+            	}
+            	var whey  = setInterval(function (){insultJarrod()}, getRandomInt(200,2000));
+            	
+         </script>
         </article>
 	</body>
 </html>
