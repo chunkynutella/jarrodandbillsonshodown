@@ -1,7 +1,14 @@
 <html>
     <head>
         <title>Mountain Misfits</title>
-        <link href="main.css" rel="stylesheet" type="text/css">
+        <style>
+            body{
+                font-size: 15em;
+                color: #7e5fc4;
+                text-align: center;
+                text-shadow: 5px 5px 1px #4b2190;
+            }
+        </style>
     </head>
     <script>
         function getRandomInt (min, max) {
