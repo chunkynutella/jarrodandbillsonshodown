@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Mountain Misfits</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+    </head>
+    <script>
+        function getRandomInt (min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        function Colors(){           
+            colors = ["#87f29a","#f287cd","#e2f287", "#FFD559","#B2834B", "#23CCA3", "#FF525F", "#CC7656", "#CC7656"];
+            var page = document.getElementById("tripzone");           
+            page.style.color = colors[getRandomInt(0,colors.length)];
+            page.style.background = "linear-gradient(" + colors[getRandomInt(0,colors.length)] + ", " +  colors[getRandomInt(0,colors.length)] + ")";
+            page.style.textShadow = "5px 5px 1px " + String(colors[getRandomInt(0,colors.length)]);
+        }
+        function Size(){
+            var page = document.getElementById("tripzone");
+            page.style.fontSize = String(getRandomInt(1, 30)) + "em";
+        }
+        function Words(){
+            var page = document.getElementById("tripzone");
+            words = ["Ass", "Poop", "Salmon", "Windows XP", "Sancho", "Flog", "Ringo", "Adventure", "Heaven", "Hotel", "Beard", "Exploration", "Placebo", "Knee", "Toast", "Hair", "Manoj", "Fire", "Hunger", "Glasses", "Water Bottle", "Bubbles", "Freckles", "Bite", "Nails", "Bullies", "Mellow", "Space", "Amber", "Nose", "Snot", "Tina"];
+            page.innerHTML = words[getRandomInt(0,words.length - 1)];
+            document.title = words[getRandomInt(0,words.length - 1)];
+        }
+        function Pictures(){
+            var page = document.getElementById("tripzone");
+            picture = ["http://media-cache-ec0.pinimg.com/236x/b8/a2/0c/b8a20c4008db297fea0d7ed0bf12fc36.jpg", "http://tech.mit.edu/V115/N17/who.gif", "http://assets-s3.rollingstone.com/assets/images/list/242d95085fde6948a36bdd6553ba7d3c12d738bc.jpg", "http://www.beertripper.com/OffTopic/RocknRoll/Jim_Morrison/Jim_Morrison_on_stage_with_beard.jpg", "http://images2.fanpop.com/image/photos/10300000/Iggy-The-Stooges-the-70s-10378901-800-707.jpg", "http://9lives.co.za/wp-content/uploads/2013/05/ClassicTracks_01.jpg", "http://upload.wikimedia.org/wikipedia/commons/1/15/Joe-Strummer.jpg"];
+        }
+        setInterval(function(){Colors()}, getRandomInt(900, 1000));
+        setInterval(function(){Size()}, getRandomInt(900, 1000));
+        setInterval(function(){Words()}, getRandomInt(900, 1000));
+    </script>
+    <body id="tripzone" onload="OffDick()">
+    </body>
+</html>
